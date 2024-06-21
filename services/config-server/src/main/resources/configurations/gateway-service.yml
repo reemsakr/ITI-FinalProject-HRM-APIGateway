@@ -1,4 +1,4 @@
- spring:
+spring:
   cloud:
     gateway:
       discovery:
@@ -12,5 +12,4 @@
   #             - Path=/api/v1/departments/**
   #
   #          *****  we law 3ndy service tany copy paste ely fo2 *****
-server:
-  port: 8222
+
