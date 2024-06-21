@@ -1,12 +1,16 @@
-spring:
+ spring:
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
   #      routes:
-  #        - id:
-  #          uri: lb:http://CUSTOMER-SERVICE
-  #          predicates: path=/api/v1/customers/**
+  #        - id:                                        --> asm el service
+  #          uri: lb:http://CUSTOMER-SERVICE            --> el endpoint ele hatro7ha bgad
+  #          predicates:
+  #             - Path=/api/v1/customers/**             -->  el endpoint ele lma t3mlha call tro7 el route dah
+  #             - Path=/api/v1/departments/**
+  #
+  #          *****  we law 3ndy service tany copy paste ely fo2 *****
 server:
   port: 8222
