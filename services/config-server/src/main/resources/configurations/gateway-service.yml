@@ -15,11 +15,5 @@ spring:
             uri: lb:http://DEMO-SERVICE
             predicates:
                - Path=/api/v1/demo/**
-  #
   #          *****  we law 3ndy service tany copy paste ely fo2 *****
-        routes:
-          - id: demo-service
-            uri: lb:http://DEMO-SERVICE
-            predicates:
-              - Path=/api/v1/demo/**
 
