@@ -12,4 +12,9 @@ spring:
   #             - Path=/api/v1/departments/**
   #
   #          *****  we law 3ndy service tany copy paste ely fo2 *****
+        routes:
+          - id: demo-service
+            uri: lb:DEMO-SERVICE
+            predicates:
+              - Path=/api/v1/demo/**
 
