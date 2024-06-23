@@ -1,0 +1,47 @@
+.root {
+    -brown: #43766C;
+    -white: #ffffff;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-color: -white;
+}
+
+.button {
+    -fx-background-color: -brown;
+    -fx-text-fill: -white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+}
+.button:hover {
+    -fx-background-color: #B5C9C5;
+    -fx-text-fill: -brown;
+}
+.button:pressed {
+    -fx-background-color: -brown;
+    -fx-text-fill: -brown;
+}
+.label {
+    -fx-weight: bold;
+    -fx-text-fill: -brown;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.chat-container {
+    -fx-background-color: -brown;
+}
+
+.message {
+    -fx-background-color: -white;
+    -fx-text-fill: -brown;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+}
+
+.message.sent {
+    -fx-alignment: center-right;
+}
+
+.message.received {
+    -fx-alignment: center-left;
+}
