@@ -11,6 +11,10 @@ spring:
           uri: lb:http://EMPLOYEE-SERVICE
           predicates:
             - Path=/api/v1/employees/**
+        - id: vacation-service
+          uri: lb:http://VACATION-SERVICE
+          predicates:
+            - Path=/api/v1/vacations/**
 
 
 
