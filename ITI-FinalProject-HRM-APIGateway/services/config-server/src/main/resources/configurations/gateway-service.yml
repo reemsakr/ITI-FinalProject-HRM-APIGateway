@@ -7,8 +7,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: demo-service
-          uri: lb:http://DEMO-SERVICE
+        - id: employee-service
+          uri: lb:http://EMPLOYEE-SERVICE
           predicates:
-            - Path=/api/v1/demo/**
+            - Path=/api/v1/employees/**
+
+
 
