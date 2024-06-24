@@ -28,6 +28,16 @@ spring:
           uri: lb:http://VACATION-SERVICE
           predicates:
             - Path=/api/v1/vacations/**
-
-
-
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"  # Your Angular app's origin
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
